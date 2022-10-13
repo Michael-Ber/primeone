@@ -1,0 +1,135 @@
+.header {
+    // height: 176px;
+    padding: 30px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    &__lang {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__center {
+        
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: #000;
+        transition: .1s all;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    }
+
+    &__right {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    &__order {
+        text-transform: uppercase;
+        color: #000;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.left {
+
+    &__up {
+    }
+
+    &__bottom {
+        margin-top: 35px;
+    }
+}
+.lang {
+
+    &__item {
+        @include bebas;
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #000;
+        text-align: center;
+        cursor: pointer;
+        & + & {
+            margin-left: 20px;
+        }
+        &_active {
+            color: #fff;
+            background-color: #000;
+        }
+    }
+}
+.bottom {
+
+    &__nav {
+    }
+}
+.nav {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__item {
+        font-size: 15px;
+        line-height: 25px;
+        text-transform: uppercase;
+        & + & {
+            margin-left: 45px;
+        }
+    }
+    &__link {
+        color: #000;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.logo {
+
+    &__text {
+        @include bebas;
+    }
+
+    &__img {
+    }
+}
+.right {
+
+    &__up {
+    }
+
+    &__bottom {
+        margin-top: 35px;
+    }
+}
