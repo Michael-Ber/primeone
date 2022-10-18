@@ -3,6 +3,7 @@
 @import './components/variables';
 
 @import './blocks/header';
+@import './blocks/menu';
 
 * {
     margin: 0;
@@ -15,6 +16,11 @@
 
 .container {
     max-width: 870px;
+    margin: 0 auto;
+}
+
+.container-lg {
+    max-width: 1370px;
     margin: 0 auto;
 }
 
