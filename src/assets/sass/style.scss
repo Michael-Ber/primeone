@@ -4,6 +4,9 @@
 
 @import './blocks/header';
 @import './blocks/menu';
+@import './blocks/card';
+@import './blocks/choose';
+@import './blocks/footer';
 
 * {
     margin: 0;
@@ -15,7 +18,7 @@
 
 
 .container {
-    max-width: 870px;
+    max-width: 880px;
     margin: 0 auto;
 }
 

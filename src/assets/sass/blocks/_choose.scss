@@ -1,0 +1,107 @@
+.choose {
+    margin-top: 80px;
+    &__wrapper-main {
+        padding-bottom: 50px;
+        background-color: #ebebeb;
+    }
+    &__wrapper-submain {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media(max-width: 767px) {
+            display: block;
+        }
+    }
+    &__left {
+        flex: 0 0 50%;
+        background-color: #000;
+        padding: 57px 57px 56px 0;
+        @media(max-width: 767px) {
+            padding: 57px 57px 56px 57px;
+        }
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 37px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        text-align: right;
+        @media(max-width: 899px) {
+            font-size: 40px;
+        }
+        @media(max-width: 767px) {
+            text-align: center;
+        }
+        @media(max-width: 419px) {
+            font-size: 27px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 50%;
+        height: 150px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 440px);
+        grid-auto-rows: auto;
+        row-gap: 50px;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 55px;
+        @media(max-width: 575px) {
+            grid-template-columns: repeat(auto-fill, 300px);
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+.item {
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        flex: 0 0 100px;
+        height: 100px;
+    }
+
+    &__descr {
+        margin-left: 12px;
+    }
+
+    &__title {
+        font-size: 25px;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+
+    &__text {
+        @include ptsans;
+        font-size: 15px;
+        line-height: 25px;
+        color: #000000;
+        margin-top: 25px;
+        @media(max-width: 575px) {
+            margin-top: 10px;
+        }
+    }
+}
